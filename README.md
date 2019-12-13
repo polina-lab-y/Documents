@@ -1,9 +1,9 @@
 # Documents
 Test for Semrush
 # Create and deploy of image
-1. Run docker container with ExampleApp on Kubernetes’s cluster.
-2. Configure port for receiver of requests: port 8800.
-3. Create structure of directories and subdirectories:
+ For run docker container with ExampleApp on Kubernetes’s cluster follow next steps:
+1. Configure port for receiver of requests: port 8800.
+2. Create structure of directories and subdirectories:
   *	mkdir quickstart_docker
   *	mkdir quickstart_docker/application
   *	mkdir quickstart_docker/docker
@@ -14,16 +14,17 @@ quickstart_docker/ # Catalog of project
 └──docker/ # content for Docker  
       └──application/ # location of Dockerfile for app 
 
-4.	Create script for deploy of application.
-5.	Put file «application.py» to directory «quickstart_docker/application/»:  
-  import http.server  
+3.	Create script for deploy of application.
+Application.py:
+import http.server  
   import socketserver  
   PORT = 8000  
   Handler = http.server.SimpleHTTPRequestHandler  
   httpd = socketserver.TCPServer((&quot;&quot;, PORT), Handler)  
   print(&quot;serving at port&quot;, PORT)  
-  httpd.serve_forever()  
-  
+  httpd.serve_forever() 
+5.	Put file «application.py» to directory «quickstart_docker/application/»:  
+    
 > **Note**. For script is need Python Virtual Environment and relevant OS.
 6.	Put file «Dockerfile» to directory «quickstart_docker/application/»:  
 
