@@ -43,7 +43,7 @@ CMD [&quot;python&quot;, &quot;/app/application.py&quot;]
 * .- working directory, build context;
 * -f docker/application/Dockerfile - Dockerfile;
 * -t exampleapp – teg of image for search.
-> **Note**. About build images for Docker Hub: [read here](http://docs.docker.com/engine/reference/builder/)
+> **Note**. About build images for Docker Hub [read here](http://docs.docker.com/engine/reference/builder/)
 8.	List images:
 $ docker images
 
