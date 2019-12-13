@@ -39,7 +39,7 @@ EXPOSE 8000
 CMD [&quot;python&quot;, &quot;/app/application.py&quot;] 
 6. Put file «Dockerfile» to directory «quickstart_docker/application/».  
 7.	Open Terminal program. Execute command «docker build . -f-docker/application/Dockerfile -t exampleapp». 
- **Decryption of arguments:**
+ **Decryption of arguments for "docker build":**
 * .- working directory, build context;
 * -f docker/application/Dockerfile - Dockerfile;
 * -t exampleapp – teg of image for search.
