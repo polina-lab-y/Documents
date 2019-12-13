@@ -14,7 +14,7 @@ quickstart_docker/ # Catalog of project
 └──docker/ # content for Docker  
       └──application/ # location of Dockerfile for app 
 
-3.	Create script for deploy of application.
+3.	Create script for deploy of application.  
 Application.py:
 import http.server  
   import socketserver  
