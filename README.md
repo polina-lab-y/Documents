@@ -23,11 +23,10 @@ Application.py:
    httpd = socketserver.TCPServer((&quot;&quot;, PORT), Handler)  
    print(&quot;serving at port&quot;, PORT)  
    httpd.serve_forever() 
-5.	Put file «application.py» to directory «quickstart_docker/application/»:  
+4.	Put file «application.py» to directory «quickstart_docker/application/»:  
     
 > **Note**. For script is need Python Virtual Environment and relevant OS. More information [here](http://https://hub.docker.com/)
-6.	Put file «Dockerfile» to directory «quickstart_docker/application/»:  
-
+5.	Create file «Dockerfile»:  
 \# Use base image from the registry  
 FROM python:3.5  
 \# Set the working directory to /app  
@@ -38,8 +37,7 @@ COPY ./application /app
 EXPOSE 8000  
 \# Execute &#39;python /app/application.py&#39; when container launches  
 CMD [&quot;python&quot;, &quot;/app/application.py&quot;] 
-
-
+6. Put file «Dockerfile» to directory «quickstart_docker/application/».  
 7.	Insert command «docker build . -f-docker/application/Dockerfile -t exampleapp» in terminal program. Argument:
 * .- working directory, build context;
 * -f docker/application/Dockerfile - Dockerfile;
