@@ -26,6 +26,7 @@ quickstart_docker/ # Catalog of project
   
 > **Note**. For script is need Python Virtual Environment and relevant OS.
 6.	Put file «Dockerfile» to directory «quickstart_docker/application/»:  
+
 \# Use base image from the registry  
 FROM python:3.5  
 \# Set the working directory to /app  
@@ -35,8 +36,9 @@ COPY ./application /app
 \# Make port 8000 available to the world outside this container  
 EXPOSE 8000  
 \# Execute &#39;python /app/application.py&#39; when container launches  
+CMD [&quot;python&quot;, &quot;/app/application.py&quot;] 
 
-CMD [\&quot;python&quot;, &quot;/app/application.py&quot;]  
+
 7.	Insert command «docker build . -f-docker/application/Dockerfile -t exampleapp» in terminal program. Argument:
 * .- working directory, build context;
 * -f docker/application/Dockerfile - Dockerfile;
