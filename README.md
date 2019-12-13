@@ -16,13 +16,13 @@ quickstart_docker/ # Catalog of project
 
 3.	Create script for deploy of application.  
 Application.py:  
-import http.server  
-  import socketserver  
-  PORT = 8000  
-  Handler = http.server.SimpleHTTPRequestHandler  
-  httpd = socketserver.TCPServer((&quot;&quot;, PORT), Handler)  
-  print(&quot;serving at port&quot;, PORT)  
-  httpd.serve_forever() 
+   import http.server  
+   import socketserver  
+   PORT = 8000  
+   Handler = http.server.SimpleHTTPRequestHandler  
+   httpd = socketserver.TCPServer((&quot;&quot;, PORT), Handler)  
+   print(&quot;serving at port&quot;, PORT)  
+   httpd.serve_forever() 
 5.	Put file «application.py» to directory «quickstart_docker/application/»:  
     
 > **Note**. For script is need Python Virtual Environment and relevant OS.
