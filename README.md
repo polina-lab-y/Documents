@@ -15,14 +15,14 @@ Test for Semrush
 └──application/ # location of Dockerfile for app 
 
 4.	Create script for deploy of application.
-5.	Put file «application.py» to directory «quickstart_docker/application/»:
-  import http.server
-  import socketserver
-  PORT = 8000
-  Handler = http.server.SimpleHTTPRequestHandler
-  httpd = socketserver.TCPServer((&quot;&quot;, PORT), Handler)
-  print(&quot;serving at port&quot;, PORT)
-  httpd.serve_forever()
+5.	Put file «application.py» to directory «quickstart_docker/application/»:  
+  import http.server  
+  import socketserver  
+  PORT = 8000  
+  Handler = http.server.SimpleHTTPRequestHandler  
+  httpd = socketserver.TCPServer((&quot;&quot;, PORT), Handler)  
+  print(&quot;serving at port&quot;, PORT)  
+  httpd.serve_forever()  
   
 > **Note**. For script is need Python Virtual Environment and relevant OS.
 6.	Put file «Dockerfile» to directory «quickstart_docker/application/»:  
