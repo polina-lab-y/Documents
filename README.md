@@ -25,7 +25,7 @@ Application.py:
    httpd.serve_forever() 
 5.	Put file «application.py» to directory «quickstart_docker/application/»:  
     
-> **Note**. For script is need Python Virtual Environment and relevant OS.
+> **Note**. For script is need Python Virtual Environment and relevant OS. More information [here](http://https://hub.docker.com/)
 6.	Put file «Dockerfile» to directory «quickstart_docker/application/»:  
 
 \# Use base image from the registry  
