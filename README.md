@@ -44,7 +44,7 @@ CMD [&quot;python&quot;, &quot;/app/application.py&quot;]
 * -f docker/application/Dockerfile - Dockerfile;
 * -t exampleapp – teg of image for search.
 > **Note**. About build images for Docker Hub [read here](http://docs.docker.com/engine/reference/builder/)
-8.	List images:
+8.	List images:  
 $ docker images
 
 | REPOSITORY     | TAG        | IMAGE ID     | CREATED       | SIZE    |
