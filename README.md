@@ -36,7 +36,7 @@ COPY ./application /app
 EXPOSE 8000  
 \# Execute &#39;python /app/application.py&#39; when container launches  
 
-CMD [\&quot;python&quot;, &quot;/app/application.py&quot;]
+CMD [\&quot;python&quot;, &quot;/app/application.py&quot;]  
 7.	Insert command «docker build . -f-docker/application/Dockerfile -t exampleapp» in terminal program. Argument:
 * .- working directory, build context;
 * -f docker/application/Dockerfile - Dockerfile;
