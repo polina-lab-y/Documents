@@ -9,10 +9,10 @@ Test for Semrush
   *	mkdir quickstart_docker/docker
   *	mkdir quickstart_docker/docker/application  
   
-  quickstart_docker/ # Catalog of project  
+quickstart_docker/ # Catalog of project  
 ├──application/ # Code of application  
 └──docker/ # content for Docker  
-  └──application/ # location of Dockerfile for app 
+      └──application/ # location of Dockerfile for app 
 
 4.	Create script for deploy of application.
 5.	Put file «application.py» to directory «quickstart_docker/application/»:  
